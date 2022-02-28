@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-     background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 98%);
 }
 
 @media (max-width:2000px) {
@@ -21,7 +21,6 @@ body {
 }
 
 .container {
-   
     margin: 150px auto;
 }
 
@@ -80,6 +79,7 @@ body {
 @media (max-width:575px) {
     .container .cards {
         padding: 0;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
@@ -91,6 +91,7 @@ body {
     border-top: 5px solid black;
     padding: 15px 20px;
     margin-top: 40px;
+    position: relative;
 }
 
 @media (max-width:575px) {
@@ -151,13 +152,7 @@ body {
 }
 
 .container .cards .card img {
-    margin: 55px 10px 0px 300px;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
 }
-
-@media (max-width:575px) {
-    .container .cards .card img {
-        margin: 56px 0px 0px 250px;
-    }
-}
-
-.container .cards {}
